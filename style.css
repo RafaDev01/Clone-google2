@@ -1,0 +1,99 @@
+:root {
+  color: #333;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  display: flex;
+}
+
+a, body, div, html, img, li, nav, ul {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  align-self: center;
+  display: flex;
+  height: 100%;
+  width: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+
+}
+
+.item {
+  align-items: center;
+  display: flex;
+  font-size: .75rem;
+  height: 32px;
+  justify-content: center;
+  margin: 0 12px 0 0;
+  width: 32px;
+}
+
+.item--first {
+  margin: 0 20px 0 0;
+}
+
+.item--last {
+  margin: 0;
+}
+
+.item--menu {
+  background-image: url('menu.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 41%;
+  height: 40px;
+  transition: all .2s ease-in-out;
+  width: 40px;
+}
+
+.item--menu:hover {
+  background-color: rgba(0, 0, 0, .1);
+  cursor: pointer;
+}
+
+.item--middle {
+  margin: 0 28px 0 0;
+}
+
+.item--profile {
+  background: url('https://lh3.googleusercontent.com/ogw/ADea4I5uu_seTUPNaZrGh8HRtNrLT6kpyFqpTrg3ed6M=s32-c-mo') no-repeat;
+  background-size: contain;
+}
+
+.item--rounded {
+  border-radius: 20px;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.list {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.user {
+  height: 32px;
+  width: 32px;
+}
+
+.menu {
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: flex-end;
+  padding: 12px 20px 0;
+}
