@@ -25,9 +25,7 @@ ul {
   list-style: none;
 }
 
-.container {
-
-}
+/* ========== Menu ===============*/
 
 .item {
   align-items: center;
@@ -69,6 +67,7 @@ ul {
 .item--profile {
   background: url('https://lh3.googleusercontent.com/ogw/ADea4I5uu_seTUPNaZrGh8HRtNrLT6kpyFqpTrg3ed6M=s32-c-mo') no-repeat;
   background-size: contain;
+  cursor: pointer;
 }
 
 .item--rounded {
@@ -78,6 +77,10 @@ ul {
 .link {
   color: inherit;
   text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .list {
@@ -96,4 +99,84 @@ ul {
   flex: 0 0 100%;
   justify-content: flex-end;
   padding: 12px 20px 0;
+}
+
+/* ========== Content ==========*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon {
+  background-color: rgb(235, 222, 222);
+  border-radius: 50%;
+  height: 48px;
+  margin-bottom: 10px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon img {
+  margin-top: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.input {
+  align-content: center;
+  margin: 0 auto;
+  width: 32em;
+}
+
+.input input {
+  background-image: url(search.svg);
+  background-position-y: center;
+  background-position-x: 3%;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 24px;
+  box-shadow:  0 0 0.8em rgba(109, 109, 98, 0.377);
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 20px;
+  padding: 14px 10px 14px 55px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 46px;
+  margin-top: 112px;
+}
+
+.recents {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 560px;
+}
+
+.recents a {
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height:112px;
+  padding: 16px;
+  text-decoration: none;
+  width: 112px;
+}
+
+.recents a:hover {
+  background-color: gainsboro;
+  cursor: pointer;
+}
+
+.recents span {
+  color: black;
+  font-size: 12px;
 }
